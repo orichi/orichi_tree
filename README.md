@@ -1,6 +1,6 @@
 # Tree
 
-TODO: Write a gem description
+一个简单的tree,实现基本tree的功能，显示节点深度
 
 ## Installation
 
@@ -17,13 +17,16 @@ Or install it yourself as:
     $ gem install tree
 
 ## Usage
+ 
+		father = Tree.new('father') #=>node father
+		father << Tree.new('child1') #=>node father's children node child1 
+		father << [Tree.new('child1'),Tree.new('child2')] 	#=>node father's children node child1 and node child2
 
-initialize one node with
-	father = Tree.new('father')
-add children by this way
-	father << Tree.new('child1')
-Do Not use 
-	father.children << Tree.new
+*Warning: Do Not use
+
+		father.children << Tree.new
+
+
 
 ## Contributing
 
